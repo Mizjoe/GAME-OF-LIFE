@@ -1,0 +1,45 @@
+#canvas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 120px;
+  margin-right: 0px;
+}
+
+#start-game {
+}
+
+body {
+  background-color: black;
+}
+
+.star-wars {
+  color: yellow;
+  src: ;
+}
+
+.reset-stop {
+  display: flex;
+  align-content: center !important;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.form-group {
+  align-items: center !important;
+  justify-content: center;
+}
+
+#slider-R-label {
+  color: red;
+}
+
+#slider-G-label {
+  color: green;
+}
+
+#slider-B-label {
+  color: blue;
+}

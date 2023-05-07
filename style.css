@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+  color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffc107;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#my-photo {
+  margin: 100px 225px;
+}
+
+#ac-milan {
+  height: 400px;
+  width: 500px;
+}
+
+#star-war-bat-man {
+  height: 400px;
+  width: 500px;
+}
+
+#kojima {
+  height: 400px;
+  width: 500px;
+}
+
+.row2 {
+  display: flex;
+  gap: 300px;
+}
+
+.button-image {
+  height: 300px;
+  width: 400px;
+}
+
+.accordion-item {
+  background-color: black;
+}
+
+.accordion-button {
+  background-color: black;
+}
