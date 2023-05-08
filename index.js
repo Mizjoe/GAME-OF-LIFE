@@ -1,7 +1,9 @@
-const unitLength = 10;
+let unitLength = 17;
 let boxColorR = 255;
 let boxColorG = 201;
 let boxColorB = 0;
+let fps = 30;
+let arr = [];
 
 const strokeColor = `blue`;
 let columns; /* To be determined by window width */
@@ -11,7 +13,8 @@ let nextBoard;
 
 function setup() {
   /* Set the canvas to be under the element #canvas*/
-  const canvas = createCanvas(1000, 470);
+  frameRate(fps);
+  const canvas = createCanvas(1235, 650);
   canvas.parent(document.querySelector("#canvas"));
 
   /*Calculate the number of columns and rows */
@@ -42,7 +45,7 @@ document.querySelector("#reset-game").addEventListener("click", function () {
   initBoard();
 });
 function draw() {
-  background(255);
+  //background(255);
   generate();
   for (let i = 0; i < columns; i++) {
     for (let j = 0; j < rows; j++) {
@@ -109,6 +112,10 @@ function mouseDragged() {
   fill(boxColorR, boxColorG, boxColorB);
   stroke(strokeColor);
   rect(x * unitLength, y * unitLength, unitLength, unitLength);
+  //check x,y and save to array
+  arr.push([x, y]);
+  var json = JSON.stringify(arr);
+  console.log(json);
 }
 
 /**
@@ -178,3 +185,58 @@ document.querySelector("#slider-G").addEventListener("input", function () {
 document.querySelector("#slider-B").addEventListener("input", function () {
   boxColorB = document.querySelector("#slider-B").value;
 });
+
+document.querySelector("#slider-fps").addEventListener("input", function () {
+  fps = parseInt(document.querySelector("#slider-fps").value);
+
+  frameRate(fps);
+});
+
+async function drawLogo() {
+  console.log("draw logo");
+  let pixelArr = await readJson("heart");
+  for (const pixel of pixelArr) {
+    let x = pixel[0];
+    let y = pixel[1];
+    currentBoard[x][y] = 1;
+    fill(boxColorR, boxColorG, boxColorB);
+    stroke(strokeColor);
+    rect(x * unitLength, y * unitLength, unitLength, unitLength);
+  }
+}
+
+document.querySelector("#logo").addEventListener("click", function () {
+  drawLogo();
+});
+
+document
+  .querySelector("#slider-unitlength")
+  .addEventListener("input", function () {
+    unitLength = parseInt(document.querySelector("#slider-unitlength").value);
+    console.log(unitLength);
+
+    clear(unitLength);
+    setup(unitLength);
+    draw(unitLength);
+  });
+
+function genrateRandomPattern() {
+  for (let i = 0; i < windowHeight; i++) {
+    for (let j = 0; j < windowHeight; j++) {
+      let state = Math.floor(Math.randow() * 2);
+      currentBoard;
+    }
+  }
+}
+
+document.querySelector("#logo").addEventListener("click", function () {
+  genrateRandomPattern;
+});
+
+async function readJson(fileName) {
+  let path = "./logo/" + fileName + ".json";
+  const jsonData = await fetch(path)
+    .then((response) => response.json())
+    .then((data) => data);
+  return jsonData;
+}

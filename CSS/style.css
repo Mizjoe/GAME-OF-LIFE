@@ -55,3 +55,36 @@ ul {
 .accordion-button {
   background-color: black;
 }
+
+.accordion-button {
+  color: #ffc107;
+  font-size: 50px;
+}
+
+#Mizjoe {
+  font-size: 100px;
+  margin-top: 150px;
+  margin-left: 100px;
+  margin-bottom: 35px;
+}
+
+#info {
+  margin-left: 180px;
+}
+
+#canvas {
+  display: flex;
+  justify-content: center;
+  margin-left: 1000px !important;
+}
+
+.carousel-item {
+  margin-top: 150px;
+  height: 800px;
+  width: 600px;
+  max-height: 500px;
+}
+
+#info > p {
+  font-size: 25px;
+}

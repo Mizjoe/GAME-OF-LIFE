@@ -8,65 +8,115 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
+    
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1>Mizjoe</h1>
-          <p>Game of life</p>
-        </div>
-        <div class="col-lg-6">
-          <img
-            id="my-photo"
-            src="https://via.placeholder.com/400x400"
-            alt=""
-          />
-        </div>
-      </div>
+      <header class="row">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              <img src="./channels4_profile.jpg" alt="Your Image" class="button-image">
-              Accordion Item #1
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <h2><a id="nav-gol" class="nav-link active" aria-current="page" href="./gol.html">Game of Life</a></h2>
+                
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="row">
+        <div class="col-lg-6">
+          <h1 id="Mizjoe">JOE LEE</h1>
+          <div id="info">
+            <p>Sneaker Reseller</p>
+            <p>born in 1990</p>
+            <p>Tecky Academy successfully</p>
+
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <img src="./Star_Wars_Logo.svg" alt="Your Image" class="button-image">
-              Accordion Item #2
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <div class="col-lg-6">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./IMG/main-photo-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./IMG/main-photo-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./IMG/main-photo-3.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <img src="./Kojima_Productions_logo.png" alt="Your Image" class="button-image">
-              Accordion Item #3
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </main>
+      <section class="row">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <img src="./IMG/channels4_profile.jpg" alt="Your Image" class="button-image">
+                AC MILAN
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>
+                  <p>意大利甲組聯賽球隊</p>
+                  <p>04/05年開始支持</p>
+                  <p>喜愛球星 馬甸尼/恩沙基</p>
+                  
+                  
+                </strong> 
             </div>
           </div>
-        </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <img src="./IMG/Star_Wars_Logo.svg" alt="Your Image" class="button-image">
+                STAR WARS
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>
+                  <p>第一套睇 : The Empire Strikes Back </p>
+                  <p>喜愛角色: Obi-Wan Kenobi</p>
+                  <p>推介:曼達洛人</p>
+                  
+                </strong> 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <img src="./IMG/Kojima_Productions_logo.png" alt="Your Image" class="button-image">
+                KOJIMA PRODUCTIONS
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>創辦人: 小島秀夫 Hideo Kojima</p>
+                <p>名作 : Metal Gear</p>
+                <p>KOJIMA PRODUCTIONS新作品 : death stranding </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>        
       </div>
+    </section>
       
        
      

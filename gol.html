@@ -21,31 +21,21 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./CSS/index.css" />
   </head>
   <body>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active" aria-current="page">Home</li>
+        <li class="breadcrumb-item"><a href="./home.html">Home</a></li>
       </ol>
     </nav>
-
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Library</li>
-      </ol>
-    </nav>
-
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-      </ol>
-    </nav>
-    <div class="star-wars">game of life</div>
+    <div class="gol-logo">Game of Life</div>
     <div id="canvas"></div>
 
     <div class="reset-stop">
+      <<button type="button" id="logo" class="btn btn-primary btn-lg">
+        Draw Heart
+      </button>
       <button type="button" id="reset-game" class="btn btn-primary btn-lg">
         Reset
       </button>
@@ -92,6 +82,29 @@
             value="0"
           />
         </div>
+      </div>
+      <div>
+        <label id="fps" for="slider">FPS:</label>
+        <input
+          type="range"
+          class="form-control-fps-range"
+          id="slider-fps"
+          min="1"
+          max="60"
+          step="1"
+          value="30"
+        />
+        <div id="frame-rate-font"></div>
+        <label id="unitLength" for="slider">ULS:</label>
+        <input
+          type="range"
+          class="form-control-unitLength-range"
+          id="slider-unitlength"
+          min="13"
+          max="20"
+          step="1"
+          value="17"
+        />
       </div>
     </div>
 
